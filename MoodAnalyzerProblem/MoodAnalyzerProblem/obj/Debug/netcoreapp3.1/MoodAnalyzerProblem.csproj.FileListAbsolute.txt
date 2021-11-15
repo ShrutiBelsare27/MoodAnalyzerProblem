@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\bin\Debug\netcoreapp3.1\MoodAnalyzerProblem.exe
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\bin\Debug\netcoreapp3.1\MoodAnalyzerProblem.deps.json
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\bin\Debug\netcoreapp3.1\MoodAnalyzerProblem.runtimeconfig.json
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\bin\Debug\netcoreapp3.1\MoodAnalyzerProblem.runtimeconfig.dev.json
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\bin\Debug\netcoreapp3.1\MoodAnalyzerProblem.dll
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\bin\Debug\netcoreapp3.1\MoodAnalyzerProblem.pdb
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.AssemblyInfo.cs
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.dll
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.pdb
+C:\Users\User\Desktop\Assignment\MoodAnalyzer\MoodAnalyzerProblem\MoodAnalyzerProblem\obj\Debug\netcoreapp3.1\MoodAnalyzerProblem.genruntimeconfig.cache

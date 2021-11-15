@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj": {}
+    "C:\\Users\\User\\Desktop\\Assignment\\MoodAnalyzer\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj": {
+    "C:\\Users\\User\\Desktop\\Assignment\\MoodAnalyzer\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Assignment\\MoodAnalyzer\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj",
         "projectName": "MoodAnalyzerProblem",
-        "projectPath": "C:\\Users\\User\\Desktop\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Assignment\\MoodAnalyzer\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\MoodAnalyzerProblem.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Assignment\\MoodAnalyzer\\MoodAnalyzerProblem\\MoodAnalyzerProblem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
