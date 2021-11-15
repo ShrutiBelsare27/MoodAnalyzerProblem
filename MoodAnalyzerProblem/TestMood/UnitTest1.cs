@@ -6,7 +6,14 @@ namespace TestMood
     [TestClass]
     public class UnitTest1
     {
-     //TC 1.1  
+
+
+        UC2MoodAnalyzer moodAnalyzer = null;
+        public UnitTest1()
+        {
+
+        }
+        //TC 1.1  
         [TestMethod]
         public void SadMood()
         {
@@ -34,6 +41,18 @@ namespace TestMood
             // Act
             string mood = moodAnalyse.AnalyseMood();
 
+            // Assert
+            Assert.AreEqual(expected, mood);
+        }
+        // UC2 null message return happy
+        [TestMethod]
+        public void givenMood_WhenNull_ShouldReturnHappyMood()
+        {
+            // Arrange
+            string expected = "Happy";
+            moodAnalyzer = new UC2MoodAnalyzer(null);
+            // Act
+            string mood = moodAnalyzer.AnalyseMood();
             // Assert
             Assert.AreEqual(expected, mood);
         }

@@ -5,18 +5,22 @@ using System.Text;
 
 namespace MoodAnalyzerProblem
 {
-    public class MoodAnalyzer
+    public class UC2MoodAnalyzer
     {
         private string message;
-       
-        public MoodAnalyzer(string message)
+        public UC2MoodAnalyzer()
+        {
+
+        }
+        public UC2MoodAnalyzer(string message)
         {
             this.message = message;
         }
 
         public string AnalyseMood()
         {
-           
+            try
+            {
                 if (this.message.Contains("Sad"))
                 {
                     return "SAD";
@@ -25,7 +29,11 @@ namespace MoodAnalyzerProblem
                 {
                     return "HAPPY";
                 }
-            
+            }
+            catch
+            {
+                return "Happy";
+            }
         }
     }
 
