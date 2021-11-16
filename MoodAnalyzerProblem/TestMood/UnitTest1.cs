@@ -132,7 +132,7 @@ namespace TestMood
             string expected = "Constructor is Not Found";
             try
             {
-                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyse("DemoClass", "MoodAnalyzer");
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyse("DemoClass", "UC2MoodAnalyzer");
             }
             catch (MoodAnalysisException exception)
             {
@@ -183,6 +183,35 @@ namespace TestMood
             catch (MoodAnalysisException exception)
             {
                 Assert.AreEqual(expected, exception.Message);
+            }
+        }
+
+
+        
+        // Test Case 6.1 Given Happy Should Return Happy.
+     
+        [TestMethod]
+        public void GivenHappyMoodShouldReturnHappy()
+        {
+            string expected = "HAPPY";
+            string mood = MoodAnalyseFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
+            Assert.AreEqual(expected, mood);
+        }
+
+       
+        // Test Case 6.2 Given Happy Should Return Happy.
+      
+        [TestMethod]
+        public void Given_ImproperMethodName_Should_Throw_MoodAnalysisException()
+        {
+            string expected = "Method is Not Found";
+            try
+            {
+                string mood = MoodAnalyseFactory.InvokeAnalyseMood("Happy", "DemoMethod");
+            }
+            catch (MoodAnalysisException e)
+            {
+                Assert.AreEqual(expected, e.Message);
             }
         }
     }

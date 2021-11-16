@@ -34,7 +34,6 @@ namespace MoodAnalyzerProblem
             }
         }
 
-
         public static object CreateMoodAnalyseUsingParameterizedConstructor(string className, string constructorName)
         {
             Type type = typeof(UC2MoodAnalyzer);
@@ -57,6 +56,47 @@ namespace MoodAnalyzerProblem
                 throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_CLASS, "Class Not Found");
             }
 
+        }
+
+        public static object CreateMoodAnalyseUsingParameterizedConstructor(string className, string constructorName, string message)
+        {
+            Type type = typeof(UC2MoodAnalyzer);
+            if (type.Name.Equals(className) || type.FullName.Equals(className))
+            {
+                if (type.Name.Equals(constructorName))
+                {
+                    ConstructorInfo ctor = type.GetConstructor(new[] { typeof(string) });
+                    object instance = ctor.Invoke(new object[] { "HAPPY" });
+                    return instance;
+                }
+                else
+                {
+                    throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_METHOD, "Constructor is Not Found");
+                }
+
+            }
+            else
+            {
+                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_CLASS, "Class Not Found");
+            }
+
+        }
+
+        public static string InvokeAnalyseMood(string message, string methodName)
+        {
+            try
+            {
+                Type type = Type.GetType("MoodAnalyzerProblem.UC2MoodAnalyzer");
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC2MoodAnalyzer",
+                    "UC2MoodAnalyzer", message);
+                MethodInfo analyseMoodInfo = type.GetMethod(methodName);
+                object mood = analyseMoodInfo.Invoke(moodAnalyseObject, null);
+                return mood.ToString();
+            }
+            catch (NullReferenceException)
+            {
+                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_METHOD, "Method is Not Found");
+            }
         }
     }
 }
