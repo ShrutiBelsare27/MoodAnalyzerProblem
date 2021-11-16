@@ -20,7 +20,7 @@ namespace MoodAnalyzerProblem
             {
                 if (this.message.Equals(string.Empty))
                 {
-                    throw new UC3MoodAnalysisException(UC3MoodAnalysisException.ExceptionType.Empty_Message, "Mood should not be Empty");
+                    throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.Empty_Message, "Mood should not be Empty");
                 }
 
 
@@ -35,7 +35,7 @@ namespace MoodAnalyzerProblem
             }
             catch (NullReferenceException)
             {
-                throw new UC3MoodAnalysisException(UC3MoodAnalysisException.ExceptionType.NULL_MESSAGE, "Mood should not be null");
+                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NULL_MESSAGE, "Mood should not be null");
             }
         }
     }

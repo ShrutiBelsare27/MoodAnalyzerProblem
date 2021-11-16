@@ -69,7 +69,7 @@ namespace TestMood
                 UC3MoodAnalyse moodAnalyse = new UC3MoodAnalyse(message);
                 string mood = moodAnalyse.AnalyseMood();
             }
-            catch (UC3MoodAnalysisException e)
+            catch (MoodAnalysisException e)
             {
                 Assert.AreEqual("Mood should not be null", e.Message);
             }
@@ -87,9 +87,56 @@ namespace TestMood
                 UC3MoodAnalyse moodAnalyse = new UC3MoodAnalyse(message);
                 string mood = moodAnalyse.AnalyseMood();
             }
-            catch (UC3MoodAnalysisException e)
+            catch (MoodAnalysisException e)
             {
                 Assert.AreEqual("Mood should not be Empty", e.Message);
+            }
+        }
+
+
+        // Test Case 4.1 Given UC2MoodAnalyzer Class Name Should Return UC2MoodAnalyzer Object.
+
+        [TestMethod]
+        public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject()
+        {
+            object expected = new UC2MoodAnalyzer();
+            object obj = MoodAnalyseFactory.CreateMoodAnalyse("MoodAnalyzerProblem.UC2MoodAnalyzer", "UC2MoodAnalyzer");
+            expected.Equals(obj);
+        }
+
+       
+        // Test Case 4.2 Given Improper Class Name Should throw MoodAnalyssiException.
+    
+        [TestMethod]
+        public void GivenImproperClassNameShouldThrowMoodAnalysisException()
+        {
+            string expected = "Class Not Found";
+            try
+            {
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyse("MoodAnalyzerApp.DemoClass", "DemoClass");
+
+            }
+            catch (MoodAnalysisException exception)
+            {
+                Assert.AreEqual(expected, exception.Message);
+            }
+        }
+
+       
+        /// Test Case 4.3 Given Improper Constructor should throw MoodAnalysisException.
+       
+        [TestMethod]
+        public void GivenImproperConstructorShouldThrowMoodAnalysisException()
+        {
+
+            string expected = "Constructor is Not Found";
+            try
+            {
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyse("DemoClass", "MoodAnalyse");
+            }
+            catch (MoodAnalysisException exception)
+            {
+                Assert.AreEqual(expected, exception.Message);
             }
         }
     }
