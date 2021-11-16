@@ -36,7 +36,7 @@ namespace MoodAnalyzerProblem
 
         public static object CreateMoodAnalyseUsingParameterizedConstructor(string className, string constructorName)
         {
-            Type type = typeof(UC2MoodAnalyzer);
+            Type type = typeof(UC3MoodAnalyse);
             if (type.Name.Equals(className) || type.FullName.Equals(className))
             {
                 if (type.Name.Equals(constructorName))
@@ -60,7 +60,7 @@ namespace MoodAnalyzerProblem
 
         public static object CreateMoodAnalyseUsingParameterizedConstructor(string className, string constructorName, string message)
         {
-            Type type = typeof(UC2MoodAnalyzer);
+            Type type = typeof(UC3MoodAnalyse);
             if (type.Name.Equals(className) || type.FullName.Equals(className))
             {
                 if (type.Name.Equals(constructorName))
@@ -86,9 +86,9 @@ namespace MoodAnalyzerProblem
         {
             try
             {
-                Type type = Type.GetType("MoodAnalyzerProblem.UC2MoodAnalyzer");
-                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC2MoodAnalyzer",
-                    "UC2MoodAnalyzer", message);
+                Type type = Type.GetType("MoodAnalyzerProblem.UC3MoodAnalyse");
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC3MoodAnalyse",
+                    "UC3MoodAnalyse", message);
                 MethodInfo analyseMoodInfo = type.GetMethod(methodName);
                 object mood = analyseMoodInfo.Invoke(moodAnalyseObject, null);
                 return mood.ToString();

@@ -8,7 +8,10 @@ namespace MoodAnalyzerProblem
     {
         private string message;
 
-       
+        public UC3MoodAnalyse()
+        {
+        }
+
         public UC3MoodAnalyse(string message)
         {
             this.message = message;

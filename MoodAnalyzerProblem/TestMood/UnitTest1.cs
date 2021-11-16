@@ -44,6 +44,7 @@ namespace TestMood
             // Assert
             Assert.AreEqual(expected, mood);
         }
+
         // UC2 null message return happy
         [TestMethod]
         public void givenMood_WhenNull_ShouldReturnHappyMood()
@@ -99,8 +100,8 @@ namespace TestMood
         [TestMethod]
         public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject()
         {
-            object expected = new UC2MoodAnalyzer();
-            object obj = MoodAnalyseFactory.CreateMoodAnalyse("MoodAnalyzerProblem.UC2MoodAnalyzer", "UC2MoodAnalyzer");
+            object expected = new UC3MoodAnalyse();
+            object obj = MoodAnalyseFactory.CreateMoodAnalyse("MoodAnalyzerProblem.UC3MoodAnalyse", "UC3MoodAnalyse");
             expected.Equals(obj);
         }
 
@@ -132,7 +133,7 @@ namespace TestMood
             string expected = "Constructor is Not Found";
             try
             {
-                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyse("DemoClass", "UC2MoodAnalyzer");
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyse("DemoClass", "UC3MoodAnalyse");
             }
             catch (MoodAnalysisException exception)
             {
@@ -145,8 +146,8 @@ namespace TestMood
         [TestMethod]
         public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
         {
-            object expected = new UC2MoodAnalyzer("HAPPY");
-            object obj = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC2MoodAnalyzer", "UC2MoodAnalyzer");
+            object expected = new UC3MoodAnalyse("HAPPY");
+            object obj = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC3MoodAnalyse", "UC3MoodAnalyse");
             expected.Equals(obj);
         }
 
@@ -177,7 +178,7 @@ namespace TestMood
             string expected = "Constructor is Not Found";
             try
             {
-                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC2MoodAnalyzer", "DemoConstructor");
+                object moodAnalyseObject = MoodAnalyseFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.UC3MoodAnalyse", "DemoConstructor");
 
             }
             catch (MoodAnalysisException exception)
